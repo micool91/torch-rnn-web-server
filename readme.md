@@ -12,7 +12,7 @@ Once you have your input data, refer the documentation for [torch-rnn](https://g
 
 ## How to use
 
-Once you have trained a torch-rnn neural network and have generated your `checkpoint_xxxx.t7`-file, put it in the `app`-folder. Edit `index.js` (and `tweet.js` if you want to tweet) to refer to the correct checkpoint file. The Docker image can now be built and run, if you want to run it on Dokku or Heroku, commit and push and that _should_ maybe possibly “just” work!
+Once you have trained a torch-rnn neural network and have generated your `checkpoint_xxxx.t7`-file, put it in the `app`-folder. Edit `index.js` (and `tweet.js` if you want to tweet) to refer to the correct checkpoint file. The Docker image can now be built and run. If you want to run it on Dokku or Heroku, commit and push and that _should_ maybe possibly “just” work!
 
 ## Why to use
 
