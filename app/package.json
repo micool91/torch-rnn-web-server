@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.15.3",
+    "array-unique": "^0.3.2",
+    "node-schedule": "^1.2.3",
+    "twitter": "^1.7.1"
+  }
+}
