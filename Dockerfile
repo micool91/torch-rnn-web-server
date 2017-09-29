@@ -8,6 +8,6 @@ RUN apt-get install -y nodejs
 
 RUN cd /app && npm install
 
-RUN node /app/index.js
-
 EXPOSE 80
+
+CMD node /app/index.js
