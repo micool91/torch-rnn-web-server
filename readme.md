@@ -12,7 +12,16 @@ Once you have your input data, refer the documentation for [torch-rnn](https://g
 
 ## How to use
 
-Once you have trained a torch-rnn neural network and have generated your `checkpoint_xxxx.t7`-file, put it in the `app`-folder. Edit `index.js` (and `tweet.js` if you want to tweet) to refer to the correct checkpoint file. The Docker image can now be built and run. If you want to run it on Dokku or Heroku, commit and push and that _should_ maybe possibly “just” work!
+The app ships with a sample checkpoint from torch-rnn ()trained on all book titles from Harlequin Romance), which is referenced in the `index.js` file by default. Replace this with your own checkpoint file when you have one.
+
+To build and run the docker image:
+
+1. `cd torch-rnn-web-server`
+2. Run `docker build .` -- the output of this command should end with **"Successfully built <CONTAINER_ID>"**
+3. Copy the CONTAINER_ID and run `docker run -p 8000:80 <CONTAINER_ID>`
+4. You can now point your browser to <http://localhost:8000> and view the neural network output in all its glory.
+
+The data processing that happens in `index.js` and all the HTML/CSS in `template.html` can of course be edited to your heart's content.
 
 ## Why to use
 
