@@ -17,9 +17,10 @@ The app ships with a sample checkpoint from torch-rnn ()trained on all book titl
 To build and run the docker image:
 
 1. `cd torch-rnn-web-server`
-2. Run `docker build .` -- the output of this command should end with **"Successfully built CONTAINER_ID"**
-3. Copy the CONTAINER_ID and run `docker run -p 8000:80 CONTAINER_ID`
+2. Run `docker build .` -- the output of this command should end with **"Successfully built IMAGE_ID>"**
+3. Copy the IMAGE_ID and run `docker run -p 8000:80 IMAGE_ID`
 4. You can now point your browser to <http://localhost:8000> and view the neural network output in all its glory.
+5. (To stop the docker container, run `docker ps` to get the container_id and then run `docker stop CONTAINER_ID`)
 
 The data processing that happens in `index.js` and all the HTML/CSS in `template.html` can of course be edited to your heart's content.
 
