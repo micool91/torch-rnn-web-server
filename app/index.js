@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
   }
 
   // Fetch data
-  generateData('/app/sample_checkpoints/harlequin_romance.t7', '200', temperature, function(str) {
+  generateData('/app/sample_checkpoints/harlequin_romance.t7', '2000', temperature, function(str) {
 
     // Split into lines, remove the first and last lines and any duplicates
     const parts = unique(str.split('\n').slice(1, -1))
