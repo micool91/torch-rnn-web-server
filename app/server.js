@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const bodyParser = require('body-parser');
 const { readFileSync } = require('fs');
 const unique = require('array-unique');
-const request = require('request');
+//const request = require('request');
 const app = express()
 
 // router
@@ -115,7 +115,7 @@ app.post('/', function (req, res) {
 */
 
 
-app.listen(3000, function () {
+app.listen(80, function () {
   console.log('Example app listening on port 3000!')
 })
 
