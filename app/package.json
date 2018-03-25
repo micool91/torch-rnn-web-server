@@ -1,8 +1,21 @@
 {
+  "name": "rnn2",
+  "version": "1.0.0",
+  "description": "generowanie treści",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "rnn",
+    "ai"
+  ],
+  "author": "Michał Jakóbowski",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3",
     "array-unique": "^0.3.2",
-    "node-schedule": "^1.2.3",
-    "twitter": "^1.7.1"
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
   }
 }
