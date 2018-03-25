@@ -41,7 +41,7 @@ router.post('/generowanie', function(req, res) {
     }*/
     console.log('wszedłem1');
     // Fetch data
-    generateData('/home/ozymandias/torch-rnn/cv/checkpoint_172200.t7', '2000', temperature, function(str) {
+    generateData('/app/sample_checkpoints/checkpoint_172200.t7', '2000', temperature, function(str) {
     console.log('wszedłem2');
       // Split into lines, remove the first and last lines and any duplicates
       const parts = unique(str.split('\n').slice(1, -1))
@@ -138,7 +138,7 @@ app.listen(3000, function () {
       when[key] = now;
       try {
         console.log(`cd /root/torch-rnn && th sample.lua -checkpoint ${cp} -length ${l} -gpu -1 -temperature ${t}`);
-        exec(`cd /home/ozymandias/torch-rnn && th sample.lua -checkpoint ${cp} -length ${l} -gpu -1 -temperature ${t}`, function(err, str) {
+        exec(`cd /root/torch-rnn && th sample.lua -checkpoint ${cp} -length ${l} -gpu -1 -temperature ${t}`, function(err, str) {
           if (err) {
             console.error(err);
             cb('');
